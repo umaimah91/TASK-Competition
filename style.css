@@ -209,6 +209,14 @@ h3 {
     width: 200px;
 }
 
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
 .parg2 .par2 {
     padding-bottom: 60px;
     color: rgb(169, 169, 173);
