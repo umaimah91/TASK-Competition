@@ -2,6 +2,7 @@
                         nav-bar mediaqure 
      ====================================================================  */
 
+
 .active {
     display: block;
 }
@@ -17,7 +18,7 @@
     background-color: #fff;
 }
 
-@media all and (max-width:680px) {
+@media all and (min-width:600px) and(min-width:680) {
     .nav-bar {
         flex-direction: column;
     }
@@ -43,5 +44,76 @@
         width: 100%;
         margin-top: 15px;
         margin-bottom: 10px;
+    }
+    .flex-container {
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .images-col {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mail {
+        margin-top: 20px;
+    }
+    .map {
+        margin-top: -60px;
+    }
+    .frm {
+        padding-top: 140px;
+    }
+}
+
+@media all and (max-width:768px) {
+    .images-col {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+        margin-left: 70px;
+    }
+    .images-col img {
+        margin-bottom: 20px;
+    }
+    input {
+        width: 150px;
+    }
+     ::placeholder {
+        font-size: 12px;
+    }
+    form {
+        margin-top: 50px;
+    }
+    .frm {
+        padding-top: 70px;
+        padding-right: 55px;
+    }
+}
+
+@media all and (max-width:1024px) {
+    .images-col {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 70px;
+    }
+    .images-col img {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    form {
+        margin-left: 40px;
+    }
+    .flex-container .side-imag {
+        max-width: 400px;
+        flex: 0 0 400px;
+    }
+    .side-imag img {
+        max-width: 100%;
+        background-size: cover;
+    }
+    .coluns {
+        column-gap: 25px;
     }
 }
